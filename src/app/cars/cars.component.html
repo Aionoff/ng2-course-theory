@@ -4,5 +4,6 @@
 <div app-car></div>
 <hr>
 
-<input type="text" class="form-control" #myInp (input)="onKeyUp(myInp.value)">
+
+<input type="text" class="form-control" [(ngModel)]="inputText" >
 <p>{{inputText}}</p>
