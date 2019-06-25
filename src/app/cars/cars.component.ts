@@ -16,7 +16,7 @@ export class CarsComponent{
     this.addCarStatus = 'Car has been added!'
   }
 
-  onKeyUp(event: Event){
-    this.inputText = (<HTMLInputElement>event.target).value;
+  onKeyUp(value){
+    this.inputText = value;
   }
 }
