@@ -5,11 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {MyComponent} from './my/my.component';
 import { from } from 'rxjs';
+import { CarsComponent } from './cars/cars.component';
+import { CarComponent } from './car/car.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyComponent
+    MyComponent,
+    CarsComponent,
+    CarComponent
   ],
   imports: [
     BrowserModule,
