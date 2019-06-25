@@ -2,3 +2,7 @@
 <p>{{addCarStatus}}</p>
 <hr>
 <div app-car></div>
+<hr>
+
+<input type="text" class="form-control" (keyup)="onKeyUp($event)">
+<p>{{inputText}}</p>

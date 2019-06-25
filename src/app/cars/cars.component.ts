@@ -7,11 +7,16 @@ import { Component } from '@angular/core';
 })
 export class CarsComponent{
   addCarStatus ='';
+  inputText='';
 
   constructor(){
   }
 
   addCar(){
     this.addCarStatus = 'Car has been added!'
+  }
+
+  onKeyUp(event: Event){
+    this.inputText = (<HTMLInputElement>event.target).value;
   }
 }
