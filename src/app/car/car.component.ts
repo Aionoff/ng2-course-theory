@@ -8,4 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class CarComponent{
   carName = 'Ford';
   carYear = 2015;
+
+  getName(){
+    return this.carName;
+  }
+
+  getYear(){
+    return this.carYear;
+  }
 }
