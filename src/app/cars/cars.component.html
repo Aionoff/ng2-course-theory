@@ -10,11 +10,15 @@
 
 <ul>
     <li *ngFor="let car of cars; let i = index">
-        <div [ngStyle]="{
-            backgroundColor: (i + 1) % 2 === 0 
-                ? 'red' : 'green',
-            'color':'white'
-        }">
+        <div 
+            [ngStyle]="{
+                backgroundColor: (i + 1) % 2 === 0 
+                    ? 'red' : 'green',
+                'color':'white'}"
+            [ngClass]="{
+                'big-text': setBigCarText(car)
+            }"
+        >
             <b>{{i+1}}</b> {{car}}
         </div>
     </li>
