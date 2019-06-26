@@ -8,11 +8,8 @@ import { Component } from '@angular/core';
 export class CarsComponent{
   carName= "";
   isCarAdded = false;
-  cars =['Ford', 'Audi', 'BMW'];
-  items = [{id:3, name: 'item 1'},
-    {id:4, name: 'item 2'},
-    {id:5, name: 'item 3'}
-   ];
+  cars =['Ford', 'Audi', 'BMW', 'Mazda', 'Lada', 'Bently'];
+
 
   constructor(){
   }
