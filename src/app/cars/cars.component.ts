@@ -6,17 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./cars.component.scss']
 })
 export class CarsComponent{
-  addCarStatus ='';
-  inputText='Defailt text';
+  carName= "";
+  isCarAdded = false;
 
   constructor(){
   }
 
   addCar(){
-    this.addCarStatus = 'Car has been added!'
-  }
-
-  onKeyUp(event){
-    this.inputText = event.target.value;
+    this.isCarAdded = true;
   }
 }
