@@ -5,24 +5,18 @@ import { Component } from '@angular/core';
   templateUrl: './cars.component.html',
   styleUrls: ['./cars.component.scss']
 })
+
 export class CarsComponent{
-  carName= "";
-  isCarAdded = false;
-  cars = ['Ford', 'Audi', 'BMW', 'Mazda', 'Lada', 'Bently'];
-  dates = [
-    new Date(2015, 2, 4).toDateString(),
-    new Date(2016, 3, 5).toDateString(),
-    new Date(2017, 4, 6).toDateString(),
-    new Date(2018, 5, 7).toDateString(),
-    new Date(2019, 6, 8).toDateString(),
-  ];
+  cars: [{name: string, year: number}] = [{
+    name: 'Ford',
+    year: 2015
+  }];
 
   constructor(){
   }
 
-  addCar(){
-    this.isCarAdded = true;
-    this.cars.push(this.carName)
-    this.carName = "";
+  updateCarList(car: {name: string, year: number}){
+    this.cars.push(car);
   }
+
 }

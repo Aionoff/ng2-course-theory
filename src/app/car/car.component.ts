@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef, ContentChild } from '@angular/core';
 
 @Component({
   selector: 'app-car',
@@ -6,14 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./car.component.scss']
 })
 export class CarComponent{
-  carName = 'Ford';
-  carYear = 2015;
+  @Input("carItem") car: {name: string, year: number}
+  @ContentChild("carHeading", {static: false}) carHeading: ElementRef;
 
-  getName(){
-    return this.carName;
-  }
+  ngAfterViewInit(){
 
-  getYear(){
-    return this.carYear;
   }
 }

@@ -8,13 +8,15 @@ import {MyComponent} from './my/my.component';
 import { from } from 'rxjs';
 import { CarsComponent } from './cars/cars.component';
 import { CarComponent } from './car/car.component';
+import { AddCarComponent } from './add-car/add-car.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyComponent,
     CarsComponent,
-    CarComponent
+    CarComponent,
+    AddCarComponent
   ],
   imports: [
     BrowserModule,
