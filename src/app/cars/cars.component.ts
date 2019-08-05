@@ -7,8 +7,6 @@ import { Component } from '@angular/core';
 })
 
 export class CarsComponent{
-
-
   cars: [{name: string, year: number}] = [{
     name: 'Ford',
     year: 2015
